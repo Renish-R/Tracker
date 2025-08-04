@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developers</title>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("Image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 16px;
+      color: #ffffff;
+      font-size: 22px;
+    }
+
+    .table-container {
+      max-height: 80vh;
+      overflow-y: auto;
+      width: 100%;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 6px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #34495e;
+      color: #fff;
+      font-size: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .level-block {
+      background-color: #dff0fa;
+      font-weight: bold;
+      color: #2c3e50;
+      text-align: left;
+      padding-left: 10px;
+      border-left: 6px solid #3498db;
+    }
+
+    td.empty {
+      color: #bbb;
+    }
+
+    td.progress {
+      position: relative;
+      color: black;
+      font-weight: bold;
+      background-color: #fff3cd;
+      cursor: default;
+    }
+
+    td.progress .tooltip,
+    td.complete .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 4px 8px;
+      border-radius: 4px;
+      position: absolute;
+      z-index: 10;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 12px;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    td.progress:hover .tooltip,
+    td.complete:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    td.complete {
+      background-color:#b7dcf2;
+      color: #155724;
+      font-weight: bold;
+      position: relative;
+      cursor: default;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    th:not(:first-child),
+    td:not(:first-child) {
+      width: 110px;
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        font-size: 12px;
+      }
+      th, td {
+        padding: 6px 4px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Java Backend Development Progress Tracker</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Level ⬆️</th>
+          <th>Reno</th>
+          <th>Nijo</th>
+          <th>Praveenath</th>
+          <th>Sooraj</th>
+          <th>Belgin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="level-block">13 – Interview Preparation</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">12 – Architecture</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">11 – Design</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">10 – Authentication</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">09 – Project</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">08 – Spring Boot</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">07 – Git & GitHub</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">06 – Database</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">05 – API</td>
+          <td class="progress">10%⏳<span class="tooltip">Started: 02 Aug</span></td>
+          <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">04 – Debugging</td>
+          <td class="complete">✔️<span class="tooltip">31 Jul – 02 Aug</span></td>
+          <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <tr><td class="level-block">03 – DSA Basics</td>
+          <td class="complete">✔️<span class="tooltip">20 Jul – 31 Jul</span></td>
+          <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+        </tr>
+        <tr>
+          <td class="level-block">02 – Problem Solving</td>
+          <td class="complete">✔️<span class="tooltip">12 Jul – 20 Jul</span></td>
+          <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+        </tr>
+        <tr>
+          <td class="level-block">01 – Java Basics</td>
+          <td class="complete">✔️<span class="tooltip">23 Jun – 11 Jul</span></td>
+          <td class="complete">✔️<span class="tooltip">08 Jul – 28 Jul</span></td>
+          <td class="complete">✔️<span class="tooltip">06 Jul – 29 Jul</span></td>
+          <td class="progress">36%⏳<span class="tooltip">Started: 08 Jul</span></td>
+          <td class="progress">61%⏳<span class="tooltip">Started: 17 Jul</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
