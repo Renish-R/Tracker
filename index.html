@@ -32,8 +32,13 @@
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      overflow-x: auto; /* allow horizontal scroll on small screens */
+
+  /* 🚀 force table to expand with page */
+      max-height: none;
+      height: auto;
+      overflow: visible;
     }
+
 
     table {
       width: 100%;
